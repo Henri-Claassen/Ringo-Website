@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-style: italic;
+  font-weight: 500;
+  cursor: url(crosshair/focus_21.png) 15 15,move;
+}
+
+a
+{
+  cursor: url(crosshair/focus2.png) 15 15,crosshair;
+}
+
+.menu
+{
+  height: 5.291005291005291vh;
+  padding: 0.5%;
+  text-align: center;
+  background: linear-gradient(90deg,#F29201,#8F3E00); 
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+.menu-list
+{ 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.menu-items
+{
+  margin-right: 4.3%;
+    
+}
+.menu a
+{
+  font-size: 1.8em;
+  color: #000;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+.menu a:hover
+{
+  color: white;
+}
+
+.menu a.active{
+  color: white;
+}
+
+.copyright
+{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8em;  
+  text-shadow: black 0.0625em 0 0.625em;
+  
+}
+.header-img img
+{
+  display: grid;  
+  width: 2.5em;
+  position: absolute;
+  left: 0.25em;   
+  top: 0.3125em;
+}
+.footer-img img
+{  
+  width: 1.3em;
+  position: relative;
+  bottom: -0.3em;  
+}

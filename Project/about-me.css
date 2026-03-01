@@ -1,0 +1,1215 @@
+
+   
+@media screen and (max-width: 599px)  /* Small Phone */
+{    
+    #outer-body
+    {
+        width: 100vw;
+        margin: 0 auto;
+        height: auto;
+        grid-template-rows: repeat(5 ,minmx(15.873015873015873vh, auto));   
+        display: grid;
+        grid-template-areas: 
+        "menu"
+        "top-section"
+        "middle-section"
+        "bottom-section"
+        "footer";
+        background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+    }
+
+    .menu
+    {
+        grid-area: menu;
+        background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+    }
+
+    #top-section
+    {   
+        grid-area: top-section;
+        position: relative; 
+        top: 5.291005291005291vh;
+        width: 100%;
+        height: 40vh;
+        background: url('images/Ringo-About-Me.jpeg') left /cover no-repeat ;   
+        animation-name: description;
+        animation-duration: 2s;  
+    }  
+    
+    @keyframes description
+    {
+        0% {height: 0px;}
+        100% {height: 40vh;}
+    }
+    
+    #top-section-desc
+    {
+        grid-area: top-section-desc;
+        position: relative;
+        top: 40vh;
+        
+    }
+
+    #top-section-text 
+    {
+        font-size: 0.8em;
+        width: 100%;       
+        text-align: center;
+        padding: 2%;
+        text-shadow: black 0.00625em 0 0.00625em;
+    }
+
+    #top-section-text h3
+    {
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 1.8em;
+    }
+
+    #middle-section
+    {   
+        margin-top: 5%;
+        position: relative;
+        top: 60vh;
+        grid-area: middle-section;
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas: 
+        "inner-top-left"
+        "inner-top-middle"
+        "inner-top-right"
+        "inner-bottom-left"
+        "inner-bottom-middle"
+        "inner-bottom-right";
+        font-size: 0.8em;  
+        text-shadow: black 0.00625em 0 0.00625em;     
+    }   
+
+
+    #middle-section h2
+    {
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 1.8em;
+        
+    }
+    
+    #inner-top-left
+    {        
+        grid-area: inner-top-left;
+        padding: 2% 0%;
+        text-align: center;
+        background-color: rgb(206, 200, 200);  
+        border-radius: 10%;
+        margin-top: 3%; 
+    }
+    #inner-top-middle
+    {
+        grid-area: inner-top-middle;
+        padding: 2% 0%;
+        text-align: center;    
+        background-color: rgb(206, 200, 200);
+        margin-top: 3%;  
+        border-radius: 10%;     
+    }
+    #inner-top-right
+    {
+        grid-area: inner-top-right;
+        padding: 2% 0%;
+        text-align: center;      
+        background-color: rgb(206, 200, 200); 
+        margin-top: 3%;  
+        border-radius: 10%;       
+    }
+    #inner-bottom-left
+    {
+        grid-area: inner-bottom-left;
+        padding: 2% 0%;
+        text-align: center;   
+        background-color: rgb(206, 200, 200);
+        margin-top: 3%;   
+        border-radius: 10%;     
+    }
+    #inner-bottom-middle
+    {
+        grid-area: inner-bottom-middle;
+        padding: 2% 0%;
+        text-align: center;    
+        background-color: rgb(206, 200, 200);  
+        margin-top: 3%; 
+        border-radius: 10%;    
+    }
+    #inner-bottom-right
+    {
+        grid-area: inner-bottom-right;
+        padding: 2% 0%;
+        text-align: center;
+        border-radius: 10%;
+        background-color: rgb(206, 200, 200);  
+        margin-top: 3%;  
+    }
+
+    #bottom-section
+    {
+        position: relative;
+        top: 60vh;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        "bot-section-img" 
+        "bot-section-description";
+        background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+        margin-top: 5%; 
+    }
+    
+    #bot-section-description
+    {
+        grid-area: bot-section-description;
+        padding: 5%;
+        text-align: center;
+        text-shadow: black 0.00625em 0 0.00625em;
+        margin-top: -5%;
+    }
+
+    #bot-section-description p
+    {
+        margin-top: -3%;
+    }
+
+    #bot-section-description h3
+    {
+        text-align: center;
+        font-size: 1.8em;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    
+    #bot-section-img
+    {
+        grid-area: bot-section-img;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #bot-section-img img
+    {
+     padding: 5% 0;
+     border-radius: 5%;
+     margin-top: 7.5%;
+    }
+
+    #bottom-section
+    {
+        grid-area: bottom-section;
+    }
+    
+    .footer
+    {
+    grid-area: footer;
+    background: linear-gradient(90deg,#6d6d6d,#4a4a4a) ;
+    width: 100%;
+    height: 6.349206349206349vh;
+    position: relative;
+    top: 55vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;  
+    }
+
+    .menu a
+    {
+        font-size: 1.2em;
+        color: #000;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;                      
+    }
+    .menu
+    {
+      height: 5.291005291005291vh;
+      padding: 1%;
+      text-align: center;
+      background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+      width: 100%;
+      position: fixed;
+      z-index: 100;
+    }
+    .header-img img
+    {
+        z-index: 1;
+        width: 5%;
+        position: absolute;
+        left: 0.25em;
+        top: 0.5em;
+    }
+}
+
+  
+  
+@media screen and (min-width: 600px) and (max-width: 768px) /* Large Phone */
+{
+
+    #outer-body
+    {
+        width: 100vw;
+        margin: 0 auto;
+        height: auto;
+        grid-template-rows: repeat(5 ,minmx(15.873015873015873vh, auto));   
+        display: grid;
+        grid-template-areas: 
+        "menu"
+        "top-section"
+        "middle-section"
+        "bottom-section"
+        "footer";
+        background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+    }
+
+    .menu
+    {
+        grid-area: menu;
+        background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+    }
+
+    #top-section
+    {   
+        grid-area: top-section;
+        position: relative; 
+        top: 5.291005291005291vh;
+        width: 100%;
+        height: 40vh;
+        background: url('images/Ringo-About-Me.jpeg') left /cover no-repeat ;   
+        animation-name: description;
+        animation-duration: 2s;  
+    }  
+    
+    @keyframes description
+    {
+        0% {height: 0px;}
+        100% {height: 40vh;}
+    }
+    
+    #top-section-desc
+    {
+        grid-area: top-section-desc;
+        position: relative;
+        top: 40vh;
+        
+    }
+
+    #top-section-text 
+    {
+        font-size: 0.8em;
+        width: 100%;       
+        text-align: center;
+        padding: 2%;
+        text-shadow: black 0.00625em 0 0.00625em;
+    }
+
+    #top-section-text h3
+    {
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 1.8em;
+    }
+
+    #middle-section
+    {   
+        margin-top: 5%;
+        position: relative;
+        top: 25vh;
+        grid-area: middle-section;
+        display: grid;
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas: 
+        "inner-top-left"
+        "inner-top-middle"
+        "inner-top-right"
+        "inner-bottom-left"
+        "inner-bottom-middle"
+        "inner-bottom-right";
+        font-size: 0.8em;  
+        text-shadow: black 0.00625em 0 0.00625em;     
+    }   
+
+
+    #middle-section h2
+    {
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 1.8em;
+        
+    }
+    
+    #inner-top-left
+    {        
+        grid-area: inner-top-left;
+        padding: 2% 0%;
+        text-align: center;
+        background-color: rgb(206, 200, 200);  
+        border-radius: 10%;
+        margin-top: 3%; 
+    }
+    #inner-top-middle
+    {
+        grid-area: inner-top-middle;
+        padding: 2% 0%;
+        text-align: center;    
+        background-color: rgb(206, 200, 200);
+        margin-top: 3%;  
+        border-radius: 10%;     
+    }
+    #inner-top-right
+    {
+        grid-area: inner-top-right;
+        padding: 2% 0%;
+        text-align: center;      
+        background-color: rgb(206, 200, 200); 
+        margin-top: 3%;  
+        border-radius: 10%;       
+    }
+    #inner-bottom-left
+    {
+        grid-area: inner-bottom-left;
+        padding: 2% 0%;
+        text-align: center;   
+        background-color: rgb(206, 200, 200);
+        margin-top: 3%;   
+        border-radius: 10%;     
+    }
+    #inner-bottom-middle
+    {
+        grid-area: inner-bottom-middle;
+        padding: 2% 0%;
+        text-align: center;    
+        background-color: rgb(206, 200, 200);  
+        margin-top: 3%; 
+        border-radius: 10%;    
+    }
+    #inner-bottom-right
+    {
+        grid-area: inner-bottom-right;
+        padding: 2% 0%;
+        text-align: center;
+        border-radius: 10%;
+        background-color: rgb(206, 200, 200);  
+        margin-top: 3%;  
+    }
+
+    #bottom-section
+    {
+        position: relative;
+        top: 25vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "bot-section-img bot-section-description";
+        background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+        margin-top: 5%; 
+    }
+    
+    #bot-section-description
+    {
+        grid-area: bot-section-description;
+        padding: 5%;
+        text-align: center;
+        text-shadow: black 0.00625em 0 0.00625em;
+        margin-top: -5%;
+        margin-left: -10%;
+    }
+
+    #bot-section-description p
+    {
+        margin-top: -3%;
+    }
+
+    #bot-section-description h3
+    {
+        text-align: center;
+        font-size: 1.8em;
+        text-decoration: underline;
+        font-weight: bold;
+        margin-top: 7.5%;
+    }
+    
+    #bot-section-img
+    {
+        grid-area: bot-section-img;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #bot-section-img img
+    {
+     border-radius: 5%;
+     margin-bottom: 5%;
+    }
+
+    #bottom-section
+    {
+        grid-area: bottom-section;
+    }
+    
+    .menu a
+    {
+        font-size: 1.8em;
+        color: #000;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;                      
+    }
+    .menu
+    {
+      height: 5.291005291005291vh;
+      padding: 1%;
+      text-align: center;
+      background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+      width: 100%;
+      position: fixed;
+      z-index: 100;
+    }
+    .header-img img
+    {
+        z-index: 1;
+        width: 5%;
+        position: absolute;
+        left: 0.25em;
+        top: 0.5em;
+    }
+
+    .footer
+    {
+    grid-area: footer;
+    background: linear-gradient(90deg,#6d6d6d,#4a4a4a) ;
+    width: 100%;
+    height: 6.349206349206349vh;
+    position: relative;
+    top: 25vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;  
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px)/* Ipad */
+{
+    #outer-body
+    {
+        width: 100vw;
+        margin: 0 auto;
+        height: auto;
+        grid-template-rows: repeat(5 ,minmx(15.873015873015873vh, auto));   
+        display: grid;
+        grid-template-areas: 
+        "menu"
+        "top-section"
+        "middle-section"
+        "bottom-section"
+        "footer";
+        background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+    }
+
+    .menu
+    {
+        grid-area: menu;
+        background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+    }
+
+    #top-section
+    {   
+        grid-area: top-section;
+        position: relative; 
+        top: 5.291005291005291vh;
+        width: 100%;
+        height: 40vh;
+        background: url('images/Ringo-About-Me.jpeg') left /cover no-repeat ;   
+        animation-name: description;
+        animation-duration: 2s;  
+    }  
+    
+    @keyframes description
+    {
+        0% {height: 0px;}
+        100% {height: 40vh;}
+    }
+    
+    #top-section-desc
+    {
+        grid-area: top-section-desc;
+        position: relative;
+        top: 40vh;
+        
+    }
+
+    #top-section-text 
+    {
+        font-size: 1em;
+        width: 100%;       
+        text-align: center;
+        padding: 2%;
+        text-shadow: black 0.00625em 0 0.00625em;
+    }
+
+    #top-section-text h3
+    {
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 1.8em;
+    }
+
+    #middle-section
+    {   
+        margin-top: 10%;
+        position: relative;
+        top: 25vh;
+        grid-area: middle-section;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "inner-top-left  inner-top-middle"
+        "inner-top-right inner-bottom-left"
+        "inner-bottom-middle inner-bottom-right";
+        font-size: 0.8em;  
+        text-shadow: black 0.00625em 0 0.00625em;       
+        width: 100%;
+    }   
+    
+    #middle-section div
+    {
+        width: 95%;
+    }
+
+    #middle-section h2
+    {
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 1.8em;
+        
+    }
+    
+    #inner-top-left
+    {        
+        grid-area: inner-top-left;
+        padding: 2% 0%;
+        text-align: center;
+        background-color: rgb(206, 200, 200);  
+        border-radius: 10%;
+        margin-top: 3%; 
+        width: 100%;
+    }
+    #inner-top-middle
+    {
+        grid-area: inner-top-middle;
+        padding: 2% 0%;
+        text-align: center;    
+        background-color: rgb(206, 200, 200);
+        margin-top: 3%;  
+        border-radius: 10%;     
+    }
+    #inner-top-right
+    {
+        grid-area: inner-top-right;
+        padding: 2% 0%;
+        text-align: center;      
+        background-color: rgb(206, 200, 200); 
+        margin-top: 3%;  
+        border-radius: 10%;       
+    }
+    #inner-bottom-left
+    {
+        grid-area: inner-bottom-left;
+        padding: 2% 0%;
+        text-align: center;   
+        background-color: rgb(206, 200, 200);
+        margin-top: 3%;   
+        border-radius: 10%;     
+    }
+    #inner-bottom-middle
+    {
+        grid-area: inner-bottom-middle;
+        padding: 2% 0%;
+        text-align: center;    
+        background-color: rgb(206, 200, 200);  
+        margin-top: 3%; 
+        border-radius: 10%;    
+    }
+    #inner-bottom-right
+    {
+        grid-area: inner-bottom-right;
+        padding: 2% 0%;
+        text-align: center;
+        border-radius: 10%;
+        background-color: rgb(206, 200, 200);  
+        margin-top: 3%;  
+    }
+
+    #bottom-section
+    {
+        position: relative;
+        top: 25vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "bot-section-img bot-section-description";
+        background: linear-gradient(90deg,#F29201,#8F3E00);
+        margin-top: 5%; 
+    }
+    
+    #bot-section-description
+    {
+        grid-area: bot-section-description;
+        padding: 5%;
+        text-align: center;
+        text-shadow: black 0.00625em 0 0.00625em;
+        margin-top: -5%;
+        margin-left: -10%;
+    }
+
+    #bot-section-description p
+    {
+        margin-top: -3%;
+    }
+
+    #bot-section-description h3
+    {
+        text-align: center;
+        font-size: 1.8em;
+        text-decoration: underline;
+        font-weight: bold;
+        margin-top: 7.5%;
+    }
+    
+    #bot-section-img
+    {
+        grid-area: bot-section-img;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #bot-section-img img
+    {
+     border-radius: 5%;
+     margin-bottom: 5%;
+    }
+
+    #bottom-section
+    {
+        grid-area: bottom-section;
+    }
+    
+    .menu a
+    {
+        font-size: 1.8em;
+        color: #000;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;                      
+    }
+    .menu
+    {
+      height: 5.291005291005291vh;
+      padding: 1%;
+      text-align: center;
+      background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+      width: 100%;
+      position: fixed;
+      z-index: 100;
+    }
+    .header-img img
+    {
+        z-index: 1;
+        width: 5%;
+        position: absolute;
+        left: 0.25em;
+        top: 0.5em;
+    }
+
+    .footer
+    {
+    grid-area: footer;
+    background: linear-gradient(90deg,#6d6d6d,#4a4a4a) ;
+    width: 100%;
+    height: 6.349206349206349vh;
+    position: relative;
+    top: 25vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;  
+    }
+} 
+
+ 
+  
+@media screen and (min-width:1024px) and (max-width: 1199px) /* Small Laptop */
+{
+    #outer-body
+    {
+        width: 98vw;
+        margin: 0 auto;
+        height: auto;
+        grid-template-rows: repeat(5 ,minmx(15.873015873015873vh, auto));   
+        display: grid;
+        grid-template-areas: 
+        "menu"
+        "top-section"
+        "middle-section"
+        "bottom-section"
+        "footer";
+        background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);    
+    }
+
+    .menu
+    {
+        grid-area: menu;
+        background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+    }
+
+    #top-section
+    {   
+        grid-area: top-section;
+        position: relative; 
+        top: 5.291005291005291vh;
+        width: 100%;
+        height: 40vh;
+        background: url('images/Ringo-About-Me.jpeg') left /cover no-repeat ;   
+        animation-name: description;
+        animation-duration: 2s;  
+    }  
+    
+    @keyframes description
+    {
+        0% {height: 0px;}
+        100% {height: 40vh;}
+    }
+    
+    #top-section-desc
+    {
+        grid-area: top-section-desc;
+        position: relative;
+        top: 40vh;
+        
+    }
+
+    #top-section-text 
+    {
+        font-size: 1em;
+        width: 100%;       
+        text-align: center;
+        padding: 2%;
+        text-shadow: black 0.00625em 0 0.00625em;
+    }
+
+    #top-section-text h3
+    {
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 1.8em;
+    }
+
+    #middle-section
+    {   
+        margin-top: 10%;
+        position: relative;
+        top: 25vh;
+        grid-area: middle-section;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "inner-top-left inner-top-middle"
+        "inner-top-right inner-bottom-left"
+        "inner-bottom-middle inner-bottom-right";
+        font-size: 0.8em;  
+        text-shadow: black 0.00625em 0 0.00625em;       
+        width: 100%;      
+    }   
+      
+    #middle-section h2
+    {
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 1.8em;        
+    }
+    
+    #inner-top-left
+    {        
+        grid-area: inner-top-left;
+        padding: 2% 0%;
+        text-align: center;
+        background-color: rgb(206, 200, 200);  
+        border-radius: 10%;
+        margin-top: 3%; 
+        width: 100%;
+    }
+    #inner-top-middle
+    {
+        grid-area: inner-top-middle;
+        padding: 2% 0%;
+        text-align: center;    
+        background-color: rgb(206, 200, 200);
+        margin-top: 3%;  
+        border-radius: 10%;     
+    }
+    #inner-top-right
+    {
+        grid-area: inner-top-right;
+        padding: 2% 0%;
+        text-align: center;      
+        background-color: rgb(206, 200, 200); 
+        margin-top: 3%;  
+        border-radius: 10%;       
+    }
+    #inner-bottom-left
+    {
+        grid-area: inner-bottom-left;
+        padding: 2% 0%;
+        text-align: center;   
+        background-color: rgb(206, 200, 200);
+        margin-top: 3%;   
+        border-radius: 10%;     
+    }
+    #inner-bottom-middle
+    {
+        grid-area: inner-bottom-middle;
+        padding: 2% 0%;
+        text-align: center;    
+        background-color: rgb(206, 200, 200);  
+        margin-top: 3%; 
+        border-radius: 10%;    
+    }
+    #inner-bottom-right
+    {
+        grid-area: inner-bottom-right;
+        padding: 2% 0%;
+        text-align: center;
+        border-radius: 10%;
+        background-color: rgb(206, 200, 200);  
+        margin-top: 3%;  
+    }
+
+    #bottom-section
+    {
+        position: relative;
+        top: 25vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "bot-section-img bot-section-description";
+        background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+        margin-top: 5%; 
+    }
+    
+    #bot-section-description
+    {
+        grid-area: bot-section-description;
+        padding: 5%;
+        text-align: center;
+        text-shadow: black 0.00625em 0 0.00625em;
+        margin-top: -5%;
+        margin-left: -10%;
+    }
+
+    #bot-section-description p
+    {
+        margin-top: -3%;
+    }
+
+    #bot-section-description h3
+    {
+        text-align: center;
+        font-size: 1.8em;
+        text-decoration: underline;
+        font-weight: bold;
+        margin-top: 7.5%;
+    }
+    
+    #bot-section-img
+    {
+        grid-area: bot-section-img;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #bot-section-img img
+    {
+     border-radius: 5%;
+     margin-bottom: 5%;
+    }
+
+    #bottom-section
+    {
+        grid-area: bottom-section;
+    }
+    
+    .menu a
+    {
+        font-size: 1.8em;
+        color: #000;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;                      
+    }
+    .menu
+    {
+      height: 5.291005291005291vh;
+      padding: 1%;
+      text-align: center;
+      background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+      width: 100%;
+      position: fixed;
+      z-index: 100;
+    }
+    .header-img img
+    {
+        z-index: 1;
+        width: 5%;
+        position: absolute;
+        left: 0.25em;
+        top: 0.5em;
+    }
+
+    .footer
+    {
+    grid-area: footer;
+    background: linear-gradient(90deg,#6d6d6d,#4a4a4a) ;
+    width: 100%;
+    height: 6.349206349206349vh;
+    position: relative;
+    top: 25vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;  
+    }
+}
+  
+@media screen and (min-width: 1200px) /* Laptop */
+{ 
+    *{
+        font-weight: bold;
+    }
+
+    #outer-body
+    {
+        max-width: 100vw;  
+        display: grid;  
+        grid-template-rows: repeat(5 minmax(15.560165975103734vh, auto));
+        margin: 0 auto; 
+        grid-template-areas:
+        "about-menu"
+        "top-section"
+        "middle-section"
+        "bottom-section"
+        "footer";  
+        background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+    }
+    
+    @keyframes first{
+        0%  {background-size: auto 100%; background-repeat: no-repeat;}
+        25% {background-size: auto 0%; background-repeat: no-repeat;}
+        50%   { background-size: auto 200%; background-repeat: no-repeat;}
+        100% {background-size: auto 100%; background-repeat: no-repeat;}
+        
+        
+      }
+      
+      .menu
+      {
+      
+        animation-name: first;
+        animation-delay: 2s;
+        animation-duration: 5s;  
+        background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+        grid-area: about-menu;
+    }
+
+    #top-section
+    {
+        position: relative;
+        top: 5.291005291005291vh;      
+        grid-area: top-section;
+        width: 100%;
+        height: 82.98755186721992vh;
+        display: grid;
+        grid-template-columns: 60% 40% ;
+        grid-template-areas: ". top-section-desc"; 
+        background: url('images/Ringo-About-Me.jpeg') center/cover no-repeat ;   
+        animation-name: description;
+        animation-duration: 2s;          
+    }
+
+
+    @keyframes description
+    {
+        0% {height: 0px;}
+        100% {height: 82.98755186721992vh;}
+    }
+
+    #top-section-desc
+    {   
+     
+        text-align: center;
+        width: 95%;
+        height: 100%;
+        font-size: 120%;      
+        padding-top: 0.2%;
+        grid-area: top-section-desc;
+        position: relative;
+        left: 4.8%;
+    }
+
+    #top-section-desc h3
+    {    
+        padding-bottom: 3%;
+        font-size: 120%;  
+        text-decoration: underline;
+        font-weight: bold;       
+    }
+
+    #top-section-text
+    {
+         background-color: rgb(206, 200, 200);  
+         border-radius: 5%;  
+         color: black;
+         box-shadow: 0 0 1.8em rgba(0, 0, 0, 10);
+    }
+
+    #middle-section
+    {
+        position: relative;
+        top: 5.291005291005291vh;     
+        grid-area: middle-section;
+        width: 100%;
+        height: minmax(82.98755186721992vh,auto);    
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas:
+        "top-left top-middle top-right"
+        "bottom-left bottom-middle bottom-right" ;
+        column-gap: -100%; 
+        padding: 3%; 
+        row-gap: 10%;
+        background: linear-gradient(90deg,#6d6d6d,#4a4a4a) ; 
+    }
+    #middle-section div
+    {
+        background-color: rgb(206, 200, 200);  
+        border-radius: 5%;
+        box-shadow: 0 0 0.9em rgba(0, 0, 0, 2);
+        padding: 2%;   
+        width: 60%;    
+        position: relative;
+        left: 20%;
+        top: -7%;      
+    }
+
+    #inner-top-left
+    {
+         grid-area: top-left;
+    }
+
+    #inner-top-middle
+    {
+        grid-area: top-middle;   
+    }
+
+    #inner-top-right
+    {
+        grid-area: top-right;  
+    }
+
+    #inner-bottom-left
+    {
+        grid-area: bottom-left;   
+    }
+
+    #inner-bottom-middle
+    {   
+        grid-area: bottom-middle;    
+    }
+
+    #inner-bottom-right
+    {
+        grid-area: bottom-right;    
+    }
+
+    #middle-section h2
+    {
+        font-size: 120%;
+        text-decoration: underline;
+        font-weight: bold;
+        text-align: center;    
+    }
+
+    #middle-section p
+    {
+        font-size: 100%;    
+    }
+
+    #bottom-section
+    {
+        position: relative;
+        top: 5.291005291005291vh;      
+        grid-area: bottom-section;        
+        display: grid;
+        grid-template-columns: 60% 40% ; 
+        grid-template-areas: "bot-section-description bot-section-img";   
+        height: 62.24066390041494vh;  
+        background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+    }
+
+    #bot-section-img img
+    {   
+          height: 100%;
+          border-radius: 5%;
+          box-shadow: 0 0 0.9em rgba(0, 0, 0, 10);
+    }
+
+    #bot-section-img
+    {
+          padding: 5% 0;
+          grid-area: bot-section-img; 
+    }
+
+    #bot-section-description
+    {
+        border-radius: 50%;
+        background-color: rgba(206, 200, 200,0.95);  
+        box-shadow: 0 0 0.9em rgba(0, 0, 0, 10);
+        padding: 6%;
+        margin: 5% 10%;   
+        position: relative;
+        left: 5%;   
+        grid-area: bot-section-description;
+    }
+
+    #bottom-section h3
+    {
+        padding-top: 12%;
+        text-align: center;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .footer
+    {
+        grid-area: footer;
+        background: linear-gradient(90deg,#6d6d6d,#4a4a4a) ;
+        width: 100%;
+        height: 6.349206349206349vh;
+        position: relative;
+        top: 5.291005291005291vh;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8em;  
+    }
+  }

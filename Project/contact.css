@@ -1,0 +1,513 @@
+body
+{
+    background: linear-gradient(90deg,#F29201,#8F3E00);
+    background-size: cover;
+}
+
+#outer
+{
+  max-width: 100vw;  
+  display: grid;
+  grid-template-rows: repeat(4 minmax(15.873015873015873vh, auto));
+  margin: 0 auto; 
+  grid-template-areas: 
+  "menu"
+  "inner-middle"
+  "group-members"
+  "footer";   
+}
+@keyframes first{
+    0%  {background-size: auto 100%; background-repeat: no-repeat;}
+    25% {background-size: auto 0%; background-repeat: no-repeat;}
+    50%   { background-size: auto 200%; background-repeat: no-repeat;}
+    100% {background-size: auto 100%; background-repeat: no-repeat;}
+    
+    
+  }
+  
+  .menu
+  {
+  
+    animation-name: first;
+    animation-delay: 2s;
+    animation-duration: 5s;
+    background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+    grid-area: menu;
+}
+
+#inner-middle
+{
+    position: relative;
+    top: 5.291005291005291vh;    
+    grid-area: inner-middle;               
+    display: grid;
+    grid-template-columns: repeat(4,1fr) ;   
+    width: 100%; 
+    height: 88.35978835978835vh;  
+    grid-template-areas: 
+    "middle-first middle-second middle-third middle-fourth";     
+    padding-top: 0%;
+    gap: 3%;    
+    background: url('images/RingoMain.png') center/cover no-repeat ;
+    position: relative;
+    animation-name: description;
+    animation-duration: 2s;  
+}
+
+@keyframes description
+{
+  0% {height: 0px;}
+  100% {height: 88.35978835978835vh;}
+}
+
+#inner-middle div
+{
+    padding: 2%;
+    position: relative;
+    top: 50%;
+}
+
+#inner-middle h2
+{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+    font-size: 1.5em;
+    line-height: 160%;
+}
+
+#inner-middle p
+{
+    text-align: center;
+    color: white;
+    font-size: 1.25em;
+}
+
+#inner-middle div
+{
+    border-radius: 5%;
+    height: 19vh;
+    background-color: rgba(128, 128, 128, 0.5);
+    margin: 0 4.5%;
+}
+
+#middle-first
+{
+    grid-area: middle-first;        
+}
+
+#middle-second
+{
+    grid-area: middle-second;    
+}
+
+#middle-third
+{
+    grid-area:middle-third;    
+}
+
+#middle-third a
+{
+    color: white;
+    font-weight: bold;
+}
+
+#middle-third a:hover
+{
+    color: black;
+}
+
+#middle-fourth  
+{
+    grid-area: middle-fourth;    
+}
+
+.footer
+{
+    grid-area: footer;
+    background: linear-gradient(90deg,#6d6d6d,#4a4a4a) ;
+    width: 100%;
+    height: 6.349206349206349vh;
+    position: relative;
+    top: 5.291005291005291vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;  
+}
+
+#link-terms
+{
+    color: white;
+    font-weight: bold;
+}
+
+#link-terms:hover
+{
+    color: black;
+}
+
+@media screen and (max-width: 599px) /* Small Phone */
+{
+
+    #inner-middle
+    {
+    position: relative;
+    top: 5.291005291005291vh;    
+    grid-area: inner-middle;               
+    display: grid;
+    grid-template-columns: 20% 60% 20% ;
+    grid-template-rows: repeat(6,1fr);   
+    width: 100%; 
+    height: 88.35978835978835vh;  
+    grid-template-areas: 
+    ". . ." 
+    ". middle-first ."
+    ". middle-second ."
+    ". middle-third ."
+    ". middle-fourth ."
+        
+    ". . .";     
+    padding-top: 0%;
+    gap: 2%;    
+    background: url('images/RingoMain.png') center/cover no-repeat ;
+    position: relative;
+    animation-name: description;
+    animation-duration: 2s;         
+    }
+
+    #inner-middle h2
+    {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+    font-size: 0.6em;
+    line-height: 150%;
+    }
+
+    #inner-middle p
+    {
+    text-align: center;
+    color: white;
+    font-size: 0.6em;    
+    }
+
+    #inner-middle div
+    {
+        border-radius: 5%;
+        height: 11vh;
+        background-color: rgba(128, 128, 128, 0.5);
+        margin: 0 4.5%;
+    }
+
+    .footer
+    {
+    grid-area: footer;
+    background: linear-gradient(90deg,#6d6d6d,#4a4a4a) ;
+    width: 100%;
+    height: 6.349206349206349vh;
+    position: relative;
+    top: 5.291005291005291vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;  
+    }
+   
+    .menu a
+    {
+        font-size: 1.2em;
+        color: #000;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;                      
+    }
+    .menu
+    {
+      height: 5.291005291005291vh;
+      padding: 1%;
+      text-align: center;
+      background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+      width: 100%;
+      position: fixed;
+      z-index: 100;
+    }
+    .header-img img
+    {
+        z-index: 1;
+        width: 5%;
+        position: absolute;
+        left: 0.25em;
+        top: 0.5em;
+    }
+}
+
+
+
+
+@media  screen and (min-width: 600px) and (max-width: 768px) /* Large Phone */
+{
+    #outer
+    {
+    max-width: 100vw;  
+    display: grid;
+    grid-template-rows: repeat(3 minmax(15.873015873015873vh, auto));
+    margin: 0 auto; 
+    grid-template-areas: 
+    "menu"
+    "inner-middle"    
+    "footer";   
+    }
+
+    #inner-middle
+    {
+    position: relative;
+    top: 5.291005291005291vh;    
+    grid-area: inner-middle;               
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    grid-template-rows: repeat(4,1fr);   
+    width: 100%; 
+    height: 88.35978835978835vh;  
+    grid-template-areas: 
+    ". ."
+    "middle-first middle-second"
+    "middle-third middle-fourth"
+    ". .";     
+    padding-top: 0%;
+    gap: 0;    
+    background: url('images/RingoMain.png') center/cover no-repeat ;
+    position: relative;
+    animation-name: description;
+    animation-duration: 2s;         
+    }
+
+    #inner-middle div
+    {    
+    padding: 2%;
+    position: relative;
+    top: 40%;   
+    }
+
+    #inner-middle h2
+    {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+    font-size: 1.2em;
+    }
+
+    #inner-middle p
+    {
+    text-align: center;
+    color: white;
+    font-size: 0.9em;
+    }
+
+    #inner-middle div
+    {
+        border-radius: 5%;
+        height: 13vh;
+        background-color: rgba(128, 128, 128, 0.5);
+        margin: 0 4.5%;
+    }
+
+    .footer
+    {
+    grid-area: footer;
+    background: linear-gradient(90deg,#6d6d6d,#4a4a4a) ;
+    width: 100%;
+    height: 6.349206349206349vh;
+    position: relative;
+    top: 5.291005291005291vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;  
+    }
+    
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 991px){ /* Small Ipad */
+
+    #inner-middle
+    {
+    position: relative;
+    top: 5.291005291005291vh;    
+    grid-area: inner-middle;               
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    grid-template-rows: repeat(4,1fr);   
+    width: 100%; 
+    height: 88.35978835978835vh;  
+    grid-template-areas: 
+    ". ."
+    "middle-first middle-second"
+    "middle-third middle-fourth"
+    ". .";     
+    padding-top: 0%;
+    gap: 0;    
+    background: url('images/RingoMain.png') center/cover no-repeat ;
+    position: relative;
+    animation-name: description;
+    animation-duration: 2s;         
+    }
+
+    #inner-middle div
+    {
+        border-radius: 5%;
+        height: 15vh;
+        background-color: rgba(128, 128, 128, 0.5);
+        margin: 0 4.5%;
+    }
+
+    #inner-middle h2
+    {
+        text-align: center;
+        font-weight: bold;
+        text-decoration: underline;
+        color: white;
+        font-size: 150%;
+        line-height: 150%;
+    }
+
+    #inner-middle p
+    {
+        text-align: center;
+        color: white;
+        font-size: 100%;    
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1023px){ /* Large Ipad */
+
+    #inner-middle
+    {
+    position: relative;
+    top: 5.291005291005291vh;    
+    grid-area: inner-middle;               
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    grid-template-rows: repeat(4,1fr);   
+    width: 100%; 
+    height: 88.35978835978835vh;  
+    grid-template-areas: 
+    ". ."
+    "middle-first middle-second"
+    "middle-third middle-fourth"
+    ". .";     
+    padding-top: 0%;
+    gap: 0;    
+    background: url('images/RingoMain.png') center/cover no-repeat ;
+    position: relative;
+    animation-name: description;
+    animation-duration: 2s;         
+    }
+
+    #inner-middle div
+    {
+        border-radius: 5%;
+        height: 11vh;
+        background-color: rgba(128, 128, 128, 0.5);
+        margin: 0 4.5%;
+    }
+
+    #inner-middle h2
+    {
+        text-align: center;
+        font-weight: bold;
+        text-decoration: underline;
+        color: white;
+        font-size: 150%;
+        line-height: 150%;
+    }
+
+    #inner-middle p
+    {
+        text-align: center;
+        color: white;
+        font-size: 100%;    
+    }
+
+}
+
+@media screen and (min-width:1024px) and (max-width: 1199px) /* Small Laptop */
+{
+    #inner-middle
+    {
+    position: relative;
+    top: 5.291005291005291vh;    
+    grid-area: inner-middle;               
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    grid-template-rows: repeat(4,1fr);   
+    width: 100%; 
+    height: 88.35978835978835vh;  
+    grid-template-areas: 
+    ". ."
+    "middle-first middle-second"
+    "middle-third middle-fourth"
+    ". .";     
+    padding-top: 0%;
+    gap: 0;    
+    background: url('images/RingoMain.png') center/cover no-repeat ;
+    position: relative;
+    animation-name: description;
+    animation-duration: 2s;         
+    }
+
+    #inner-middle div
+    {
+        border-radius: 5%;
+        height: 18vh;
+        background-color: rgba(128, 128, 128, 0.5);
+        margin: 0 4.5%;
+    }
+
+    #inner-middle h2
+    {
+        text-align: center;
+        font-weight: bold;
+        text-decoration: underline;
+        color: white;
+        font-size: 150%;
+        line-height: 150%;
+    }
+
+    #inner-middle p
+    {
+        text-align: center;
+        color: white;
+        font-size: 100%;    
+    }
+}
+
+@media screen and (min-width: 1200px) /* Laptop */
+{ 
+    *{
+        font-weight: bold;
+    }
+
+    #inner-middle h2
+    {
+        text-align: center;
+        font-weight: bold;
+        text-decoration: underline;
+        color: white;
+        font-size: 150%;
+        line-height: 150%;
+    }
+
+    #inner-middle p
+    {
+        text-align: center;
+        color: white;
+        font-size: 100%;    
+    }
+}

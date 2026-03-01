@@ -1,0 +1,1252 @@
+@media screen and (max-width: 599px) /* Small Phone */
+{ 
+  body
+{
+  background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+} 
+  #outer
+  {
+    width: 100vw;
+    display: grid;
+    grid-template-rows: repeat(5 minmax(15.873015873015873vh, auto));
+    margin: 0 auto;
+    grid-template-areas: 
+    "menu"
+    "description"
+    "inner-top"
+    "inner-middle"  
+    "footer";
+  }
+  
+  .menu
+  {
+    background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+    grid-area: menu;
+  }
+  
+  #description
+  {
+    position: relative;
+    top: 5.291005291005291vh;
+    grid-area: description;
+    width: 100%;
+    height: 40vh;   
+    background: url('images/RingoDivBackground.png') center / cover no-repeat; 
+    animation-name: description;
+    animation-duration: 2s; 
+  }
+  
+  @keyframes description
+  {
+  0% {height: 0vh;}
+  100% {height: 40vh;}
+  } 
+
+  #Paragraph-1
+  {
+    font-size: 0.7em; 
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 15vh;
+    text-shadow: black 0.0625em 0 0.625em;
+  }
+
+  #inner-top
+  {
+    position: relative;
+    top: 8vh;
+    grid-area: inner-top;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:    
+    "ringo-gif"
+    "ringo-description";  
+    width: 90%; 
+    position: relative;
+    left: 5%;
+  }
+  
+
+  #ringo-gif
+  {
+    grid-area: ringo-gif;
+    background-color: rgb(206, 200, 200);  
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+  }
+
+  #ringo-gif img
+  {
+    width: 100%;    
+  }
+
+  #ringo-description
+  {
+    grid-area: ringo-description;      
+  }
+  
+  #Ringo-Name
+  {     
+    font-size: 1.5625em;
+    text-decoration: underline;
+    text-align: center;
+    background-color: rgb(206, 200, 200);
+    margin-top: 2%;
+    padding-bottom: 2%; 
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;   
+  }
+  
+
+  #About-Ringo
+  {
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(206, 200, 200); 
+    padding-bottom: 4%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+  }
+  
+  #inner-middle
+  {
+    grid-area: inner-middle;
+    display: grid;
+    grid-template-rows:4em repeat(6,1fr);
+    position: relative;
+    top: 8vh;
+    grid-template-areas: 
+    "title"
+    "assassination"
+    "escorting"
+    "hunting-criminals"
+    "dueling"
+    "revenge"
+    "tracking"; 
+    padding-bottom: 5%;
+  }
+
+  #inner-middle img{
+    width: 80vw;
+    height: 36.57142857142857vh;
+    border-radius: 7.5%;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 2);
+    margin-top: -5%;
+  }
+  
+  #Title
+  {
+    margin-top: 6%;
+    grid-area: title;    
+    text-decoration: underline;
+    text-align: center;  
+  }
+
+ 
+  #assassination
+  {
+    grid-area: assassination;
+    padding-top: 5%;    
+  }
+  
+  #escorting
+  {
+    grid-area: escorting;
+    padding-top: 5%;  
+  }
+
+  #hunting-criminals
+  {
+   grid-area: hunting-criminals; 
+   padding-top: 5%;  
+  }
+
+  #dueling
+  {
+    grid-area: dueling;
+    padding-top: 5%;  
+  }
+
+  #revenge
+  {
+    grid-area: revenge;
+    padding-top: 5%;  
+  }
+
+  #tracking
+  {
+    grid-area: tracking;
+    padding-top: 5%;  
+  }
+
+  .pic-description
+{  
+  padding: 0 2em;
+  font-weight: bold; 
+  text-decoration: none;
+  text-align: center;
+  margin-top: -4%;
+}
+
+.pic-heading
+{
+  text-decoration: underline;   
+  font-size: 1.5625em;
+  text-align: center;
+}
+
+.pictures
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+  .footer
+    {
+    grid-area: footer;
+    background: linear-gradient(90deg,#6d6d6d,#4a4a4a) ;
+    width: 100%;
+    height: 6.349206349206349vh;
+    position: relative;
+    top: 5.291005291005291vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;  
+    }
+
+    .menu a
+    {
+        font-size: 1.2em;
+        color: #000;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;                      
+    }
+    .menu
+    {
+      height: 5.291005291005291vh;
+      padding: 1%;
+      text-align: center;
+      background:radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+      width: 100%;
+      position: fixed;
+      z-index: 100;
+    }
+    .header-img img
+    {
+        z-index: 1;
+        width: 5%;
+        position: absolute;
+        left: 0.25em;
+        top: 0.5em;
+    }
+}
+
+
+@media  screen and (min-width: 600px) and (max-width: 768px) /* Large Phone */
+
+  { 
+    body
+  {
+    background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+  } 
+    #outer
+    {
+      width: 100vw;
+      display: grid;
+      grid-template-rows: repeat(5 minmax(15.873015873015873vh, auto));
+      margin: 0 auto;
+      grid-template-areas: 
+      "menu"
+      "description"
+      "inner-top"
+      "inner-middle"  
+      "footer";
+    }
+    
+    .menu
+    {
+      background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+      grid-area: menu;
+    }
+    
+    #description
+    {
+      position: relative;
+      top: 5.291005291005291vh;
+      grid-area: description;
+      width: 100%;
+      height: 40vh;   
+      background: url('images/RingoDivBackground.png') center / cover no-repeat; 
+      animation-name: description;
+      animation-duration: 2s; 
+    }
+  
+    @keyframes description
+    {
+    0% {height: 0vh;}
+    100% {height: 40vh;}
+    } 
+  
+    #Paragraph-1
+    {
+      font-size: 1.4em; 
+      text-align: center;
+      color: white;
+      position: relative;
+      top: 15vh;
+      text-shadow: black 0.0625em 0 0.625em;
+    }
+  
+    #inner-top
+    {
+      position: relative;
+      top: 8vh;
+      grid-area: inner-top;
+      display: grid;
+      grid-template-rows: repeat(2,1fr);
+      grid-template-areas:    
+      "ringo-gif"
+      "ringo-description";  
+      width: 90%; 
+      position: relative;
+      left: 5%;
+    }
+    
+  
+    #ringo-gif
+    {
+      grid-area: ringo-gif;
+      background-color: rgb(206, 200, 200);  
+      border-top-left-radius: 5%;
+      border-top-right-radius: 5%;
+    }
+  
+    #ringo-gif img
+    {
+      width: 100%;    
+    }
+  
+    #ringo-description
+    {
+      grid-area: ringo-description;      
+    }
+    
+    #Ringo-Name
+    {     
+      font-size: 1.7em;
+      text-decoration: underline;
+      text-align: center;
+      background-color: rgb(206, 200, 200);
+      margin-top: 2%;
+      padding-bottom: 2%; 
+      border-top-left-radius: 5%;
+      border-top-right-radius: 5%;   
+    }
+    
+  
+    #About-Ringo
+    {
+      font-weight: bold;
+      text-align: center;
+      background-color: rgb(206, 200, 200); 
+      padding-bottom: 4%;
+      border-bottom-left-radius: 5%;
+      border-bottom-right-radius: 5%;
+      font-size: 1.2em;
+    }
+    
+    #inner-middle
+    {
+      grid-area: inner-middle;
+      display: grid;
+      grid-template-rows:4em repeat(6,1fr);
+      position: relative;
+      top: 8vh;
+      grid-template-areas: 
+      "title"
+      "assassination"
+      "escorting"
+      "hunting-criminals"
+      "dueling"
+      "revenge"
+      "tracking"; 
+      padding-bottom: 5%;
+    }
+  
+    #inner-middle img{
+      width: 80vw;
+      height: 36.57142857142857vh;
+      border-radius: 7.5%;
+      box-shadow: 0 0 1em rgba(0, 0, 0, 2);
+      
+    }
+    
+    #Title
+    {
+      margin-top: -5%;
+      grid-area: title;    
+      text-decoration: underline;
+      text-align: center;  
+      font-size: 1.6em;
+    }
+  
+   
+    #assassination
+    {
+      grid-area: assassination;
+      padding-top: 5%;    
+    }
+    
+    #escorting
+    {
+      grid-area: escorting;
+      padding-top: 5%;  
+    }
+  
+    #hunting-criminals
+    {
+     grid-area: hunting-criminals; 
+     padding-top: 5%;  
+    }
+  
+    #dueling
+    {
+      grid-area: dueling;
+      padding-top: 5%;  
+    }
+  
+    #revenge
+    {
+      grid-area: revenge;
+      padding-top: 5%;  
+    }
+  
+    #tracking
+    {
+      grid-area: tracking;
+      padding-top: 5%;  
+    }
+  
+    .pic-description
+  {  
+    padding: 0 2em;
+    font-weight: bold; 
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .pic-heading
+  {
+    text-decoration: underline;   
+    font-size: 2em;
+    text-align: center;
+
+  }
+  
+  .pictures
+  {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  
+    .footer
+      {
+      grid-area: footer;
+      background: linear-gradient(90deg,#6d6d6d,#4a4a4a) ;
+      width: 100%;
+      height: 6.349206349206349vh;
+      position: relative;
+      top: 5.291005291005291vh;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.8em;  
+      }
+  
+      .menu a
+      {
+          font-size: 1.8em;
+          color: #000;
+          text-decoration: none;
+          width: 100%;
+          height: 100%;                      
+      }
+      .menu
+      {
+        height: 5.291005291005291vh;
+        padding: 1%;
+        text-align: center;
+        background:radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+      }
+      .header-img img
+      {
+          z-index: 1;
+          width: 5%;
+          position: absolute;
+          left: 0.25em;
+          top: 0.5em;
+      }
+} /* End Of Large Phone */
+
+@media screen and (min-width: 769px) and (max-width: 1023px)/* Small Ipad */
+
+  { 
+    body
+  {
+    background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+  } 
+    #outer
+    {
+      width: 100vw;
+      display: grid;
+      grid-template-rows: repeat(5 minmax(15.873015873015873vh, auto));
+      margin: 0 auto;
+      grid-template-areas: 
+      "menu"
+      "description"
+      "inner-top"
+      "inner-middle"  
+      "footer";
+    }
+    
+    .menu
+    {
+      background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+      grid-area: menu;
+    }
+    
+    #description
+    {
+      position: relative;
+      top: 5.291005291005291vh;
+      grid-area: description;
+      width: 100%;
+      height: 40vh;   
+      background: url('images/RingoDivBackground.png') center / cover no-repeat; 
+      animation-name: description;
+      animation-duration: 2s; 
+    }
+  
+    @keyframes description
+    {
+    0% {height: 0vh;}
+    100% {height: 40vh;}
+    } 
+  
+    #Paragraph-1
+    {
+      font-size: 1.4em; 
+      text-align: center;
+      color: white;
+      position: relative;
+      top: 15vh;
+      text-shadow: black 0.0625em 0 0.625em;
+    }
+  
+    #inner-top
+    {
+      position: relative;
+      top: 8vh;
+      grid-area: inner-top;
+      display: grid;
+      grid-template-rows: repeat(2,1fr);
+      grid-template-areas:    
+      "ringo-gif"
+      "ringo-description";  
+      width: 90%; 
+      position: relative;
+      left: 5%;
+    }
+    
+  
+    #ringo-gif
+    {
+      grid-area: ringo-gif;
+      background-color: rgb(206, 200, 200);  
+      border-top-left-radius: 5%;
+      border-top-right-radius: 5%;
+    }
+  
+    #ringo-gif img
+    {
+      width: 100%;    
+    }
+  
+    #ringo-description
+    {
+      grid-area: ringo-description;      
+    }
+    
+    #Ringo-Name
+    {     
+      font-size: 1.5625em;
+      text-decoration: underline;
+      text-align: center;
+      background-color: rgb(206, 200, 200);
+      margin-top: 2%;
+      padding-bottom: 2%; 
+      border-top-left-radius: 5%;
+      border-top-right-radius: 5%;   
+    }
+    
+  
+    #About-Ringo
+    {
+      font-weight: bold;
+      text-align: center;
+      background-color: rgb(206, 200, 200); 
+      padding-bottom: 4%;
+      border-bottom-left-radius: 5%;
+      border-bottom-right-radius: 5%;
+      font-size: 1.4em;
+    }
+    
+    #inner-middle
+    {
+      grid-area: inner-middle;
+      display: grid;
+      grid-template-rows:2em repeat(6,1fr);
+      position: relative;
+      top: 8vh;
+      grid-template-areas: 
+      "title"
+      "assassination"
+      "escorting"
+      "hunting-criminals"
+      "dueling"
+      "revenge"
+      "tracking"; 
+      padding-bottom: 10%;
+    }
+  
+    #inner-middle img{
+      width: 80vw;
+      height: 36.57142857142857vh;
+      border-radius: 7.5%;
+      box-shadow: 0 0 1em rgba(0, 0, 0, 2);
+      margin-top: -5%;
+    }
+    
+    #Title
+    {
+      margin-top: -15%;
+      grid-area: title;    
+      text-decoration: underline;
+      text-align: center;  
+      font-size: 1.6em;           
+    }
+  
+   
+    #assassination
+    {
+      grid-area: assassination;
+      
+    }
+    
+    #escorting
+    {
+      grid-area: escorting;
+      padding-top: 5%;  
+    }
+  
+    #hunting-criminals
+    {
+     grid-area: hunting-criminals; 
+     padding-top: 5%;  
+    }
+  
+    #dueling
+    {
+      grid-area: dueling;
+      padding-top: 5%;  
+    }
+  
+    #revenge
+    {
+      grid-area: revenge;
+      padding-top: 5%;  
+    }
+  
+    #tracking
+    {
+      grid-area: tracking;
+      padding-top: 5%;  
+    }
+  
+    .pic-description
+  {  
+    padding: 0 2em;
+    font-weight: bold; 
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .pic-heading
+  {
+    text-decoration: underline;   
+    font-size: 2.5em;
+    text-align: center;    
+    margin-bottom: 3%;
+  }
+  
+  .pictures
+  {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  
+    .footer
+      {
+      grid-area: footer;
+      background: linear-gradient(90deg,#6d6d6d,#4a4a4a) ;
+      width: 100%;
+      height: 6.349206349206349vh;
+      position: relative;
+      top: 5.291005291005291vh;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.8em;  
+      }
+  
+      .menu a
+      {
+          font-size: 2em;
+          color: #000;
+          text-decoration: none;
+          width: 100%;
+          height: 100%;                      
+      }
+      .menu
+      {
+        height: 5.291005291005291vh;
+        padding: 1%;
+        text-align: center;
+        background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+      }
+      .header-img img
+      {
+          z-index: 1;
+          width: 5%;
+          position: absolute;
+          left: 0.25em;
+          top: 0.5em;
+      }
+}
+
+
+@media screen and (min-width:1024px) and (max-width: 1199px) /* Small Laptop */
+{ 
+  
+    body
+  {
+    background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+  } 
+    #outer
+    {
+      width: 98vw;
+      display: grid;
+      grid-template-rows: repeat(5 minmax(15.873015873015873vh, auto));
+      margin: 0 auto;
+      grid-template-areas: 
+      "menu"
+      "description"
+      "inner-top"
+      "inner-middle"  
+      "footer";
+    }
+    
+    .menu
+    {
+      background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+      grid-area: menu;
+    }
+    
+    #description
+    {
+      position: relative;
+      
+      top: 5.291005291005291vh;
+      grid-area: description;
+      width: 100%;
+      height: 40vh;   
+      background: url('images/RingoDivBackground.png') center / cover no-repeat; 
+      animation-name: description;
+      animation-duration: 2s; 
+    }
+  
+    @keyframes description
+    {
+    0% {height: 0vh;}
+    100% {height: 40vh;}
+    } 
+  
+    #Paragraph-1
+    {
+      font-size: 1.4em; 
+      text-align: center;
+      color: white;
+      position: relative;
+      top: 15vh;
+      text-shadow: black 0.0625em 0 0.625em;
+    }
+  
+    #inner-top
+    {
+      position: relative;
+      top: 8vh;
+      grid-area: inner-top;
+      display: grid;
+      grid-template-rows: repeat(2,1fr);
+      grid-template-areas:    
+      "ringo-gif"
+      "ringo-description";  
+      width: 90%; 
+      position: relative;
+      left: 5%;
+    }
+    
+  
+    #ringo-gif
+    {
+      grid-area: ringo-gif;
+      background-color: rgb(206, 200, 200);  
+      border-top-left-radius: 5%;
+      border-top-right-radius: 5%;
+    }
+  
+    #ringo-gif img
+    {
+      width: 100%;    
+    }
+  
+    #ringo-description
+    {
+      grid-area: ringo-description;      
+    }
+    
+    #Ringo-Name
+    {     
+      
+      text-decoration: underline;
+      text-align: center;
+      background-color: rgb(206, 200, 200);
+      margin-top: 2%;
+      padding-bottom: 2%; 
+      border-top-left-radius: 5%;
+      border-top-right-radius: 5%;   
+    }
+    
+  
+    #About-Ringo
+    {
+      font-weight: bold;
+      text-align: center;
+      background-color: rgb(206, 200, 200); 
+      padding-bottom: 4%;
+      border-bottom-left-radius: 5%;
+      border-bottom-right-radius: 5%;
+      font-size: 1.4em;
+    }
+    
+    #inner-middle
+    {
+      grid-area: inner-middle;
+      display: grid;
+      grid-template-rows: 2em repeat(3,1fr);
+      grid-template-columns: repeat(2,1fr);
+      position: relative;
+      top: 8vh;
+      grid-template-areas: 
+      "title title" 
+      "assassination escorting"
+      "hunting-criminals dueling" 
+      "revenge tracking"; 
+      padding-bottom: 10%;
+      width: 100%;
+      
+    }
+    
+    #inner-middle img{
+      width: 40vw;
+      height: 36.57142857142857vh;
+      border-radius: 7.5%;
+      box-shadow: 0 0 1em rgba(0, 0, 0, 2);
+      margin-top: -5%;
+    }
+    
+    #Title
+    {
+      margin-top: -15%;
+      grid-area: title;    
+      text-decoration: underline;
+      text-align: center;  
+      font-size: 1.6em;     
+    }
+  
+   
+    #assassination
+    {
+      grid-area: assassination;
+      padding-top: 5%; 
+    }
+    
+    #escorting
+    {
+      grid-area: escorting;
+      padding-top: 5%;  
+    }
+  
+    #hunting-criminals
+    {
+     grid-area: hunting-criminals; 
+     padding-top: 5%;  
+    }
+  
+    #dueling
+    {
+      grid-area: dueling;
+      padding-top: 5%;  
+    }
+  
+    #revenge
+    {
+      grid-area: revenge;
+      padding-top: 5%;  
+    }
+  
+    #tracking
+    {
+      grid-area: tracking;
+      padding-top: 5%;  
+    }
+  
+    .pic-description
+  {
+     padding: 0 2em; 
+    font-weight: bold; 
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5em;   
+  }
+  
+  .pic-heading
+  {
+    text-decoration: underline;   
+    font-size: 2.5em;
+    text-align: center;    
+    margin-bottom: 3%;
+  }
+  
+  .pictures
+  {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  
+    .footer
+      {
+      grid-area: footer;
+      background: linear-gradient(90deg,#6d6d6d,#4a4a4a) ;
+      width: 100%;
+      height: 6.349206349206349vh;
+      position: relative;
+      top: 5.291005291005291vh;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.8em;  
+      }
+  
+      .menu a
+      {
+          font-size: 2em;
+          color: #000;
+          text-decoration: none;
+          width: 100%;
+          height: 100%;                      
+      }
+      .menu
+      {
+        height: 5.291005291005291vh;
+        padding: 1%;
+        text-align: center;
+        background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+      }
+      .header-img img
+      {
+          z-index: 1;
+          width: 5%;
+          position: absolute;
+          left: 0.25em;
+          top: 0.5em; 
+      } 
+      
+}
+
+@media screen and (min-width:1200px)
+{
+
+*{
+  font-weight: bold;
+}
+
+  body
+{
+  /* background: linear-gradient(90deg,#F29201,#8F3E00); */
+  background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+  
+   
+  /* linear-gradient(135deg, rgb(247, 235, 207,80%) ,rgb(200, 60, 6,50%),rgb(200, 60, 6,100%)/* rgb(20, 9, 120,60%) );*//* linear-gradient(135deg,hsl(56, 70%, 50%),hsl(20, 95%, 31%)); */
+  
+}
+@keyframes first{
+  0%  {background-size: auto 100%; background-repeat: no-repeat;}
+  25% {background-size: auto 0%; background-repeat: no-repeat;}
+  50%   { background-size: auto 200%; background-repeat: no-repeat;}
+  100% {background-size: auto 100%; background-repeat: no-repeat;}
+  
+  
+}
+
+.menu
+{
+
+  animation-name: first;
+  animation-delay: 2s;
+  animation-duration: 5s;
+  background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B );
+  
+  /* background: radial-gradient(rgb(226, 159, 4) ,rgb(200, 60, 6),rgb(200, 60, 6)); */
+  /* (135deg,rgb(200, 60, 6,40%),rgb(160, 60, 6,100%), rgb(20, 9, 120,60%));  *//* linear-gradient(90deg,rgb(138, 69, 4),rgb(179, 152, 102),rgb(4, 9, 139)); *//* rgb(20, 9, 120,60%) */
+  
+  
+}
+
+#outer
+{
+  
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5 minmax(13.889vh, auto));
+  margin: 0 auto; 
+  grid-template-areas: 
+  "menu menu"
+  "heading heading"
+  "inner-top inner-top"
+  "inner-middle inner-middle"  
+  "footer footer";
+}
+
+.menu{
+  grid-area: menu;  
+}
+
+#description
+{  
+  grid-area: heading;  
+  width: 100%;
+  height: 85vh;
+  background: url('images/RingoDivBackground.png') center / cover no-repeat; 
+  position: relative;
+  top: 5.3vh; 
+  animation-name: description;
+  animation-duration: 2s; 
+}
+@keyframes description
+{
+  0% {height: 0px;}
+  100% {height: 85vh;}
+} 
+
+#Paragraph-1
+{
+  font-size: 1.8em; 
+  font-weight: 500;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 37vh;
+  text-shadow: black 0.0625em 0 0.625em;
+}
+
+#inner-top
+{
+  grid-area: inner-top;  
+  width: 100%;
+  height: 43.56846473029046vh;  
+  position: relative;
+  top: 5.291005291005291vh;  
+  background: linear-gradient(90deg,#6d6d6d,#4a4a4a);  
+}
+
+#inner-top
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 2%; 
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 2%;
+  padding-left: 2%;
+  
+}
+
+#ringo-gif
+{
+  display: grid;
+  justify-content: end;
+  align-items: end; 
+}
+
+#ringo-gif img
+{
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 2);
+}
+
+#ringo-description
+{
+  background-color: rgb(206, 200, 200);
+  border-radius: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 8%;  
+  box-shadow: 0 0 1em rgba(0, 0, 0, 10);
+}
+
+
+#Ringo-Name
+{
+  position: absolute;
+  right: 25%;
+  top: 25%;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#inner-middle{
+  grid-area: inner-middle;  
+  width: 100%;
+  height: min(158.73015873015873vh,auto);
+  position: relative;
+  top: 5.291005291005291vh;
+  
+}
+
+#inner-middle{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 20px repeat(2, min(13.889vh, auto));
+  margin: 1% auto;
+  padding: 0.5%;
+  gap: 1.5vw;
+  row-gap: 3em;  
+  grid-template-areas:
+  "title title title"
+  "assassination escorting hunting-criminals"
+  "dueling revenge tracking";  
+  text-align: center;   
+   
+}
+
+#Title
+{  
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-area: title;    
+  text-decoration: underline;
+}
+
+#assassination{
+  grid-area: assassination;      
+}
+
+#escorting{
+  grid-area: escorting;   
+}
+
+#hunting-criminals{
+  grid-area: hunting-criminals;   
+}
+
+#dueling{
+  grid-area: dueling;    
+}
+
+#revenge{
+  grid-area: revenge;    
+  }
+
+#tracking{
+  grid-area: tracking;    
+}
+
+
+.footer{
+  grid-area: footer;
+  background: linear-gradient(90deg,#6d6d6d,#4a4a4a) ;
+  width: 100%;
+  height: 6.349206349206349vh;
+  position: relative;
+  top: 5.291005291005291vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8em;  
+}
+
+#inner-middle img{
+  width: 18vw;
+  height: 36.57142857142857vh;
+  border-radius: 7.5%;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 2);
+}
+
+h1
+{
+  font-size: 1.8em; 
+}
+
+.pic-description
+{  
+  padding: 0 8em;
+  font-weight: bold; 
+  text-decoration: none;
+  text-align: left;
+
+}
+
+.pic-heading
+{
+  text-decoration: underline;   
+  font-size: 1.5625em;
+}
+}

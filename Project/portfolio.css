@@ -1,0 +1,1998 @@
+
+body
+{   background: radial-gradient(#CF5605,#C93F06);
+    background-size: cover;
+    z-index: -2;
+}
+*
+{
+  font-weight: bold;
+}
+@keyframes first{
+  0%  {background-size: auto 100%; background-repeat: no-repeat;}
+  25% {background-size: auto 0%; background-repeat: no-repeat;}
+  50%   { background-size: auto 200%; background-repeat: no-repeat;}
+  100% {background-size: auto 100%; background-repeat: no-repeat;} 
+}
+
+.menu
+{
+
+  animation-name: first;
+  animation-delay: 2s;
+  animation-duration: 5s;
+  background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+}
+#outer
+{
+  max-width: 100vw;
+  max-width: 100%;
+  display: grid;  
+  grid-template-rows: repeat(6 minmax(15.873015873015873vh, auto));
+  margin: 0 auto; 
+  grid-template-areas:
+  "menu"
+  "top-section"
+  "mid"
+  "bot"
+  "bottom"
+  "footer";
+}
+
+.menu
+{
+    grid-area: menu;
+}
+
+ #top 
+  { 
+    grid-area: top-section;
+    
+    height: 63.492063492063494vh;
+    position: relative;
+    top: 5.021164021164021vh;     
+  }
+
+  div#container
+  {   
+  height: 95%;
+  background-color: #6d6d6d;
+  background-image: url(images/contact-background.avif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  
+  width: 100%;
+  position: relative;
+  
+  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  } 
+  
+  
+  
+  
+  section#description
+  {
+  position: relative; 
+  left: 15%;
+  opacity: 0.7;
+  background-color: black;
+  width: 50%;
+  animation-name: description;
+  animation-duration: 2s;
+    
+  }
+  
+  @keyframes description
+  {
+    0% {height: 0%; opacity: 0;}
+    100% {height: 100%; opacity: 0.7;}
+  }
+  section#description>p
+  { 
+    
+    position: relative;
+    top: 15%;
+    color: white;
+    text-align: center;
+    animation-name: description-text;
+    animation-duration: 2s;
+    
+    
+    
+  }
+  
+  @keyframes description-text
+  {
+    0% {opacity: 0;}
+    100% {opacity: 100;}
+  }
+  
+  #mid div h1{
+    font-weight: bolder;
+  }
+
+  #mid div p{
+    font-weight: bold; 
+  }
+  
+  #mid{ 
+    grid-area: mid;
+    background: linear-gradient(90deg, #6d6d6d, #4a4a4a);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0 auto;
+    padding: 0.5%;
+    grid-template-areas:
+    "title title title title title title"
+    "assassination hunting-criminals dueling revenge tracking escorting";  
+    text-align: center;
+    gap: 1%;  
+    
+  }
+  div.mid-img img{
+    
+    width: 12vw;
+    height: 18.285714285714285vh;
+    border-radius: 7.5%;
+    
+    
+  }
+  #Title
+  {  
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-area: title;    
+    text-decoration: underline;
+    margin-bottom: 0.5%;
+      font-size: xx-large;
+  }
+  
+  #Assassination{
+    grid-area: assassination;
+  }
+  
+  #Escorting{
+    grid-area: escorting;   
+  }
+  
+  #Hunting{
+    grid-area: hunting-criminals;   
+  }
+  
+  #Dueling{
+    grid-area: dueling;    
+  }
+  
+  #Revenge{
+    grid-area: revenge;    
+  }
+  
+  #Tracking{
+    grid-area: tracking;    
+  }
+  
+  
+  div#bot
+  {
+    background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6));
+    grid-area: bot;
+    padding-top: 3%;
+    height: 250.64021164021165vh;
+    display:grid;
+    grid-template-columns: repeat(3, minmax(auto,1fr)) ;
+    grid-template-rows: repeat(2, minmax(auto,1fr));
+    padding-bottom: 1%;
+  }
+  div.top
+  {
+    position: relative;
+    width: 80%;    
+    left: 10%;
+    border: 2px rgba(0, 0, 0, 0.226) solid;
+    border-top: none;
+    bottom: 2.5%;
+    border-top: none;
+    border-radius: 2%;
+  }
+  
+  div.bot
+  {
+    width: 80%;
+    position: relative;  
+    border: 2px rgba(66, 66, 66, 0.514) solid;
+    border-top: none;
+    left: 10%;
+    border-radius: 2%;
+  }
+  
+  
+  #bot p
+  {
+    position:relative;
+    border-top: 2px rgba(0, 0, 0, 0.226) solid;
+    
+    text-align: center;
+    color: black;
+    font-size: 110%;
+  }
+  #bot h2
+  {
+    font-size: xx-large;
+    text-decoration: underline;
+  }
+  
+  .slideshow-container {
+    /* position: relative; */ /* arrows move to picture */
+    width: 100%;
+    max-width: 26.041666666666668vw;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 10%;
+  }
+  
+  .slides {
+    display: none;
+  }
+  
+  .slides img {
+    height: 30cqmax;
+
+    border-radius: 2%;
+    border-top: 2px black solid;   
+    width: 100%;
+    
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: auto;
+    padding: 3%;
+    margin-top: -5%;
+    color: white;
+    font-weight: bold;
+    font-size: 180%;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    cursor: url(crosshair/focus2.png) 15 15,crosshair;
+    font-style: normal;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+ /*  .dots {
+    text-align: center;
+    padding: 10px;
+    display: none;
+    
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+   */
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  #bottom{   
+    width: 100%;
+    grid-area: bottom;
+
+  }
+  
+  #Titles{  
+    text-align: center;
+    text-decoration: underline;
+    font-size: xx-large;
+    margin-bottom: 1%;
+  }
+  
+  #title-box{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0.5%;
+ 
+    grid-template-areas:
+    "title title title"
+    "titles1 titles2 titles3";  
+    text-align: center; 
+  }
+  
+  #titles1{
+    grid-area: titles1;      
+  }
+  
+  #titles2{
+    grid-area: titles2;   
+  }
+  
+  #titles3{
+    grid-area: titles3;   
+  }
+  
+  .title-group{
+    font-size: 190%;
+  }
+  .footer{
+    grid-area: footer;
+    background: linear-gradient(90deg,#6d6d6d,#4a4a4a) ;
+    width: 100%;
+    height: 6.349206349206349vh;
+    position: relative;
+    top: 5.291005291005291vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;  
+  }
+
+
+
+    @media screen and (max-width: 599px) /* Small Phone */
+  {
+    /* css reset */
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
+    {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+  }
+ 
+  #Title{
+    font-size: xx-large;
+  }
+
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+      display: block;
+  }
+  body {
+      line-height: 1;
+  }
+  ol, ul {
+      list-style: none;
+  }
+  blockquote, q {
+      quotes: none;
+  }
+  blockquote:before, blockquote:after, q:before, q:after {
+      content: '';
+      content: none;
+  }
+  table {
+      border-collapse: collapse;
+      border-spacing: 0;
+  }
+  /* css reset end*/
+  body
+  {
+    background: radial-gradient(#CF5605,#C93F06);
+  background-size: cover;
+  z-index: -2;
+  }
+  #mid
+  {
+  font-size: 200%;
+  }
+  #top
+  {
+  font-size: 50%;
+  }
+  #bottom
+  {
+  font-size: 80%;
+  }
+  #outer
+  {
+    
+  max-width: 100vw;
+  display: grid;  
+  grid-template-rows: repeat(6 minmax(15.873015873015873vh, auto));
+  margin: 0 auto;   
+  grid-template-areas:
+  "menu"
+  "top-section"
+  "mid"
+  "bot"
+  "bottom"
+  "footer";
+  
+  }
+  
+  .menu
+  {
+  grid-area: menu;
+  }
+  
+  #top 
+  { 
+  grid-area: top-section;
+  
+  /* height: 63.492063492063494vh; */
+  height: 4%;
+  position: relative;
+  top: 4.021164021164021vh;     
+  }
+  
+
+  div#container
+  {   
+  height: 95%;
+  background-color: #6d6d6d;
+  background-image: url(images/contact-background.avif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  
+  width: 100%;
+  position: relative;
+  
+  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  } 
+  
+  
+  
+  
+  section#description
+  {
+  position: relative; 
+  left: 15%;
+  opacity: 0.7;
+  background-color: black;
+  width: 75%;
+  animation-name: description;
+  animation-duration: 2s;
+    
+  }
+  
+  @keyframes description
+  {
+    0% {height: 0%; opacity: 0;}
+    100% {height: 100%; opacity: 0.7;}
+  }
+  section#description>p
+  { 
+    
+    position: relative;
+    top: 6%;
+    color: white;
+    text-align: center;
+    animation-name: description-text;
+    animation-duration: 2s;
+    
+    
+    
+  }
+  
+  @keyframes description-text
+  {
+    0% {opacity: 0;}
+    100% {opacity: 100;}
+  }
+  
+  
+  
+  #mid{ 
+    grid-area: mid;
+    background: linear-gradient(90deg, #6d6d6d, #4a4a4a);
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(7,1fr);
+    margin: 0 auto;
+    padding: 0.5%;
+    grid-template-areas:
+    ". title title  ."
+    ". assassination assassination."
+    ". hunting-criminals hunting-criminals."
+    ". dueling dueling."
+    ". revenge revenge."
+    ". tracking tracking."
+    ". escorting escorting.";
+    
+    text-align: center;   
+    }
+    
+    
+    div.mid-img img{
+    
+    /* width: 12vw; */
+    width: 150%;
+    position: relative;
+    right: 25%;
+    height: 18.285714285714285vh;
+    border-radius: 7.5%;
+    
+    
+    }
+    #Title
+    {  
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-area: title;    
+    text-decoration: underline;
+    margin-bottom: 0%;
+    }
+    
+    #Assassination{
+    grid-area: assassination;
+    }
+    
+    #Escorting{
+    grid-area: escorting;   
+    }
+    
+    #Hunting{
+    grid-area: hunting-criminals;   
+    }
+    
+    #Dueling{
+    grid-area: dueling;    
+    }
+    
+    #Revenge{
+    grid-area: revenge;    
+    }
+    
+    #Tracking{
+    grid-area: tracking;    
+    }
+  
+  
+  div#bot
+  {
+    background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6));
+    grid-area: bot;
+    padding-top: 20%;
+    height: 650vh;
+    display:grid;
+    margin-right: 8%;
+    grid-template-columns: repeat(1, minmax(auto,1fr)) ;
+    grid-template-rows: repeat(6, minmax(auto,1fr));
+  }
+  div.top,div.bot
+{
+width: 90%;    
+border: 2px rgba(0, 0, 0, 0.226) solid;
+border-top: none;
+border-radius: 2%;
+gap: 2%;
+
+}
+  
+  
+#bot p
+{
+border-top: 2px rgba(0, 0, 0, 0.226) solid;
+color: black;
+font-size: 200%;
+}
+#bot h2
+{
+font-size: medium;
+text-decoration: underline;
+}
+
+  .slideshow-container {
+    /* position: relative; */ /* arrows move to picture */
+    width: 100%;
+    max-width:90%;  
+    margin-bottom: 10%;
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  .slides {
+    display: none;
+  }
+  
+  .slides img {
+    height: 40cqmax;
+    
+    border-radius: 2%;
+    border-top: 2px black solid;   
+    width: 100%;
+    
+    }
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 10%;
+      width: auto;
+      padding: 3%;
+      margin-top: -5%;
+      color: white;
+      font-weight: bold;
+      font-size: 180%;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      cursor: url(crosshair/focus2.png) 15 15,crosshair;
+      font-style: normal;
+      }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  #bottom{   
+    width: 100%;
+    grid-area: bottom;
+    
+  }
+  
+  #Titles{  
+    text-align: center;
+    text-decoration: underline;
+    font-size: xx-large;
+  }
+  
+  #title-box{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0.5%;
+ 
+    grid-template-areas:
+    "title title title"
+    "titles1 titles2 titles3";  
+    text-align: center;
+  }
+  
+  #titles1{
+    grid-area: titles1;    
+    gap: 3%;  
+  }
+  
+  #titles2{
+    grid-area: titles2;   
+  }
+  
+  #titles3{
+    grid-area: titles3;   
+  }
+  
+  .title-group{
+    font-size: 190%;
+  }
+  .footer
+{
+grid-area: footer;
+background: linear-gradient(90deg,#6d6d6d,#4a4a4a) ;
+width: 100%;
+height: 6.349206349206349vh;
+position: relative;
+/* top: 510vh; */
+top: 5.291005291005291vh;
+display: grid;
+justify-content: center;
+align-items: center;
+font-size: 1.2em;  
+}
+.header-img img
+{
+    z-index: 1;
+    width: 5%;
+}
+
+.menu a
+{
+    font-size: 1.2em;
+    color: #000;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;                      
+}
+.menu
+{
+  height: 5.291005291005291vh;
+  padding: 1%;
+  text-align: center;
+  background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+.header-img img
+{
+    z-index: 1;
+    width: 5%;
+    position: absolute;
+    left: 0.25em;
+    top: 0.5em;
+}
+
+    
+ 
+}
+ @media screen and (min-width: 600px) and (max-width: 768px) /* Large Phone */
+  {
+    /* css reset */
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
+    {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+  }
+ 
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+      display: block;
+  }
+  body {
+      line-height: 1;
+  }
+  ol, ul {
+      list-style: none;
+  }
+  blockquote, q {
+      quotes: none;
+  }
+  blockquote:before, blockquote:after, q:before, q:after {
+      content: '';
+      content: none;
+  }
+  table {
+      border-collapse: collapse;
+      border-spacing: 0;
+  }
+  /* css reset end*/
+    body
+  {
+    background: radial-gradient(#CF5605,#C93F06);
+    background-size: cover;
+    z-index: -2;
+      
+    
+ }
+ #mid
+ {
+  font-size: 150%;
+ }
+ #top
+ {
+    font-size: 100%;
+ }
+ #bot>p
+ {
+
+    font-size: 120%;
+    
+ }
+ #bottom
+ {
+   font-size: 70%;
+ }
+#outer
+{
+  
+  max-width: 100vw;
+  display: grid;  
+  grid-template-rows: repeat(6 minmax(15.873015873015873vh, auto));
+  margin: 0 auto; 
+  grid-template-areas:
+  "menu"
+  "top-section"
+  "mid"
+  "bot"
+  "bottom"
+  "footer";
+  
+}
+
+.menu
+{
+    grid-area: menu;
+}
+
+ #top 
+  { 
+    grid-area: top-section;
+    
+    /* height: 63.492063492063494vh; */
+    height: 10%;
+    position: relative;
+    top: 4.021164021164021vh;     
+  }
+
+  div#container
+  {   
+  height: 95%;
+  background-color: #6d6d6d;
+  background-image: url(images/contact-background.avif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  
+  width: 100%;
+  position: relative;
+  
+  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  } 
+  
+  
+  
+  
+  section#description
+  {
+  position: relative; 
+  left: 15%;
+  opacity: 0.7;
+  background-color: black;
+  width: 75%;
+  animation-name: description;
+  animation-duration: 2s;
+  
+    
+  }
+  
+  @keyframes description
+  {
+    0% {height: 0%; opacity: 0;}
+    100% {height: 100%; opacity: 0.7;}
+  }
+  section#description>p
+  { 
+    
+    position: relative;
+    top: 10%;
+    color: white;
+    text-align: center;
+    animation-name: description-text;
+    animation-duration: 2s;
+    
+    
+    
+  }
+  
+  @keyframes description-text
+  {
+    0% {opacity: 0;}
+    100% {opacity: 100;}
+  }
+  
+  
+  
+  #mid{ 
+    grid-area: mid;
+    background: linear-gradient(90deg, #6d6d6d, #4a4a4a);
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(7,1fr);
+    margin: 0 auto;
+    padding: 0.5%;
+    grid-template-areas:
+    ". title title  ."
+    ". assassination assassination."
+    ". hunting-criminals hunting-criminals."
+    ". dueling dueling."
+    ". revenge revenge."
+    ". tracking tracking."
+    ". escorting escorting.";
+   
+    text-align: center;   
+  }
+
+ 
+  div.mid-img img{
+    
+    /* width: 12vw; */
+    width: 150%;
+    position: relative;
+    right: 25%;
+    height: 18.285714285714285vh;
+    border-radius: 7.5%;
+    
+    
+  }
+  #Title
+  {  
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-area: title;    
+    text-decoration: underline;
+    margin-bottom: 0.5%;
+  }
+  
+  #Assassination{
+    grid-area: assassination;
+  }
+  
+  #Escorting{
+    grid-area: escorting;   
+  }
+  
+  #Hunting{
+    grid-area: hunting-criminals;   
+  }
+  
+  #Dueling{
+    grid-area: dueling;    
+  }
+  
+  #Revenge{
+    grid-area: revenge;    
+  }
+  
+  #Tracking{
+    grid-area: tracking;    
+  }
+  
+  
+  div#bot
+  {
+    background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6));
+    grid-area: bot;
+    padding-top: 10%;
+    height: 700.64021164021165vh;
+    display:grid;
+    grid-template-columns: repeat(2, minmax(auto,1fr)) ;
+    grid-template-rows: repeat(3, minmax(auto,1fr));
+   /*  padding-bottom: 1%; */
+  }
+  div.top,div.bot
+  {
+   position: static;
+    width: 80%;    
+    /* left: 10%; */
+    margin-left: 10%;
+    border: 2px rgba(0, 0, 0, 0.226) solid;
+    border-top: none;
+    /* bottom: 2.5%; */
+    border-radius: 2%;
+  }
+  
+ 
+  
+  #bot p
+  {
+    position:relative;
+    border-top: 2px rgba(0, 0, 0, 0.226) solid;
+    
+    text-align: center;
+    color: black;
+  }
+  #bot h2
+  {
+    font-size: xx-large;
+    text-decoration: underline;
+  }
+  
+  .slideshow-container {
+    position: relative; /* arrows move to picture */
+    width: 100%;
+    max-width: 26.041666666666668vw;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 10%;
+  }
+  
+  .slides {
+    display: none;
+  }
+  
+  .slides img {
+    height: 50cqmax;
+
+    border-radius: 2%;
+    border-top: 2px black solid;   
+    width: 100%;
+    
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 25%;
+    width: auto;
+    padding: 3%;
+    margin-top: -5%;
+    color: white;
+    font-weight: bold;
+    font-size: 180%;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    cursor: url(crosshair/focus2.png) 15 15,crosshair;
+    font-style: normal;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+ 
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  #bottom{   
+    width: 100%;
+    grid-area: bottom;
+    
+  }
+  
+  #Titles{  
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  #title-box{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0.5%;
+ 
+    grid-template-areas:
+    "title title title"
+    "titles1 titles2 titles3";  
+    text-align: center; 
+  }
+  
+  #titles1{
+    grid-area: titles1;      
+  }
+  
+  #titles2{
+    grid-area: titles2;   
+  }
+  
+  #titles3{
+    grid-area: titles3;   
+  }
+  
+  .title-group{
+    font-size: 190%;
+  }
+
+    .footer
+    {
+    grid-area: footer;
+    background: linear-gradient(90deg,#6d6d6d,#4a4a4a) ;
+    width: 100%;
+    height: 8.349206349206349vh;
+    position: relative;
+    top: 5.291005291005291vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;  
+    }
+    .header-img img
+{
+    z-index: 1;
+    width: 5%;
+}
+
+
+.menu
+{
+  height: 7.291005291005291vh;
+  padding: 1%;
+  text-align: center;
+  background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+.header-img img
+{
+    z-index: 1;
+    width: 5%;
+    position: absolute;
+    left: 0.25em;
+}
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 991px)/* Small Ipad  */
+  {
+    /* css reset */
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
+    {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+  }
+ 
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+      display: block;
+  }
+  body {
+      line-height: 1;
+  }
+  ol, ul {
+      list-style: none;
+  }
+  blockquote, q {
+      quotes: none;
+  }
+  blockquote:before, blockquote:after, q:before, q:after {
+      content: '';
+      content: none;
+  }
+  table {
+      border-collapse: collapse;
+      border-spacing: 0;
+  }
+  /* css reset end*/
+
+    body
+    {
+      background: radial-gradient(#CF5605,#C93F06);
+      background-size: cover;
+      z-index: -2;
+        
+      
+   }
+   #mid
+   {
+    font-size: 110%;
+   }
+   #top
+   {
+      font-size: 145%;
+   }
+   #bot>p
+   {
+  
+      font-size: 120%;
+      
+   }
+   #bottom
+   {
+     font-size: 45%;
+   }
+  #outer
+  {
+    
+    max-width: 100vw;
+    display: grid;  
+    grid-template-rows: repeat(6 minmax(15.873015873015873vh, auto));
+    margin: 0 auto; 
+    grid-template-areas:
+    "menu"
+    "top-section"
+    "mid"
+    "bot"
+    "bottom"
+    "footer";
+    
+  }
+  
+  .menu
+  {
+      grid-area: menu;
+  }
+  
+   #top 
+    { 
+      grid-area: top-section;
+      
+      /* height: 63.492063492063494vh; */
+      height: 8%;
+      position: relative;
+      top: 4.021164021164021vh;     
+    }
+  
+    div#container
+    {   
+    height: 95%;
+    background-color: #6d6d6d;
+    background-image: url(images/contact-background.avif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    width: 100%;
+    position: relative;
+    
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    } 
+    
+    
+    
+    
+    section#description
+    {
+    position: relative; 
+    left: 0%;
+    opacity: 0.7;
+    background-color: black;
+    width: 100%;
+    animation-name: description;
+    animation-duration: 2s;
+    
+      
+    }
+    
+    @keyframes description
+    {
+      0% {height: 0%; opacity: 0;}
+      100% {height: 100%; opacity: 0.7;}
+    }
+    section#description>p
+    { 
+      
+      position: relative;
+      top: 5%;
+      color: white;
+      text-align: center;
+      animation-name: description-text;
+      animation-duration: 2s;
+      
+      
+      
+    }
+    
+    @keyframes description-text
+    {
+      0% {opacity: 0;}
+      100% {opacity: 100;}
+    }
+    
+    
+    
+    #mid{ 
+      grid-area: mid;
+      background: linear-gradient(90deg, #6d6d6d, #4a4a4a);
+      width: 100%;
+      
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(7,1fr);
+      margin: 0 auto;
+      padding: 0.5%;
+      grid-template-areas:
+      ". title title  ."
+      ". assassination assassination."
+      ". hunting-criminals hunting-criminals."
+      ". dueling dueling."
+      ". revenge revenge."
+      ". tracking tracking."
+      ". escorting escorting.";
+     
+      text-align: center;   
+    }
+  
+   
+    div.mid-img img{
+      
+      /* width: 12vw; */
+      width: 150%;
+      position: relative;
+      right: 25%;
+      height: 50.285714285714285vh;
+      border-radius: 7.5%;
+      
+      
+    }
+    #Title
+    {  
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      grid-area: title;    
+      text-decoration: underline;
+      margin-bottom: 0.5%;
+    }
+    
+    #Assassination{
+      grid-area: assassination;
+    }
+    
+    #Escorting{
+      grid-area: escorting;   
+    }
+    
+    #Hunting{
+      grid-area: hunting-criminals;   
+    }
+    
+    #Dueling{
+      grid-area: dueling;    
+    }
+    
+    #Revenge{
+      grid-area: revenge;    
+    }
+    
+    #Tracking{
+      grid-area: tracking;    
+    }
+    
+    
+    div#bot
+    {
+      background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6));
+      grid-area: bot;
+      padding-top: 10%;
+      height: 629vh;
+      display:grid;
+      grid-template-columns: repeat(2, minmax(auto,1fr)) ;
+      grid-template-rows: repeat(3, minmax(auto,1fr));
+     /*  padding-bottom: 1%; */
+    }
+    div.top,div.bot
+    {
+     position: static;
+      width: 80%;    
+      /* left: 10%; */
+      margin-left: 10%;
+      border: 2px rgba(0, 0, 0, 0.226) solid;
+      border-top: none;
+      /* bottom: 2.5%; */
+      border-radius: 2%;
+    }
+    
+   
+    
+    #bot p
+    {
+      position:relative;
+      border-top: 2px rgba(0, 0, 0, 0.226) solid;
+      
+      text-align: center;
+      color: black;
+    }
+    #bot h2
+    {
+      font-size: xx-large;
+      text-decoration: underline;
+    }
+    
+    .slideshow-container {
+      position: relative; /* arrows move to picture */
+      width: 100%;
+      max-width:90%; 
+      margin: auto;
+      overflow: hidden;
+      margin-bottom: 10%;
+    }
+    
+    .slides {
+      display: none;
+    }
+    
+    .slides img {
+      height: 60cqmax;
+  
+      border-radius: 2%;
+      border-top: 2px black solid;   
+      width: 100%;
+      
+    }
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 15%;
+      width: auto;
+      padding: 3%;
+      margin-top: -5%;
+      color: white;
+      font-weight: bold;
+      font-size: 180%;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      cursor: url(crosshair/focus2.png) 15 15,crosshair;
+      font-style: normal;
+    }
+    
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+   
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+  
+    #bottom{    
+      width: 100%;
+      grid-area: bottom;
+      
+    }
+    
+    #Titles{  
+      text-align: center;
+      text-decoration: underline;
+    }
+    
+    #title-box{
+  
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0.5%;
+   
+      grid-template-areas:
+      "title title title"
+      "titles1 titles2 titles3";  
+      text-align: center; 
+    }
+    
+    #titles1{
+      grid-area: titles1;      
+    }
+    
+    #titles2{
+      grid-area: titles2;   
+    }
+    
+    #titles3{
+      grid-area: titles3;   
+    }
+    
+    .title-group{
+      font-size: 190%;
+    }
+  
+  
+  } 
+
+@media screen and (min-width: 992px) and (max-width: 1024px) /* Large Ipad  */
+{
+  /* css reset */
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
+  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* css reset end*/
+  body
+    {
+      background: radial-gradient(#CF5605,#C93F06);
+      background-size: cover;
+      z-index: -2;
+        
+      
+   }
+   #mid
+   {
+    font-size: 110%;
+   }
+   #top
+   {
+      font-size: 150%;
+   }
+   #bot>p
+   {
+  
+      font-size: 120%;
+      
+   }
+   #bottom
+   {
+     font-size: 45%;
+   }
+  #outer
+  {
+    
+    max-width: 100vw;
+    display: grid;  
+    grid-template-rows: repeat(6 minmax(15.873015873015873vh, auto));
+    margin: 0 auto; 
+    grid-template-areas:
+    "menu"
+    "top-section"
+    "mid"
+    "bot"
+    "bottom"
+    "footer";
+    
+  }
+  
+  .menu
+  {
+      grid-area: menu;
+  }
+  
+   #top 
+    { 
+      grid-area: top-section;
+      
+      /* height: 63.492063492063494vh; */
+      height: 8%;
+      position: relative;
+      top: 4.021164021164021vh;     
+    }
+  
+    div#container
+    {   
+    height: 95%;
+    background-color: #6d6d6d;
+    background-image: url(images/contact-background.avif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    width: 100%;
+    position: relative;
+    
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    } 
+    
+    
+    
+    
+    section#description
+    {
+    position: relative; 
+    left: 0%;
+    opacity: 0.7;
+    background-color: black;
+    width: 100%;
+    animation-name: description;
+    animation-duration: 2s;
+    
+      
+    }
+    
+    @keyframes description
+    {
+      0% {height: 0%; opacity: 0;}
+      100% {height: 100%; opacity: 0.7;}
+    }
+    section#description>p
+    { 
+      
+      position: relative;
+      top: 5%;
+      color: white;
+      text-align: center;
+      animation-name: description-text;
+      animation-duration: 2s;
+      
+      
+      
+    }
+    
+    @keyframes description-text
+    {
+      0% {opacity: 0;}
+      100% {opacity: 100;}
+    }
+    
+    
+    
+    #mid{ 
+      grid-area: mid;
+      background: linear-gradient(90deg, #6d6d6d, #4a4a4a);
+      width: 100%;
+      
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(7,1fr);
+      margin: 0 auto;
+      padding: 0.5%;
+      grid-template-areas:
+      ". title title  ."
+      ". assassination assassination."
+      ". hunting-criminals hunting-criminals."
+      ". dueling dueling."
+      ". revenge revenge."
+      ". tracking tracking."
+      ". escorting escorting.";
+     
+      text-align: center;   
+    }
+  
+   
+    div.mid-img img{
+      
+      /* width: 12vw; */
+      width: 150%;
+      position: relative;
+      right: 25%;
+      height: 50.285714285714285vh;
+      border-radius: 7.5%;
+      
+      
+    }
+    #Title
+    {  
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      grid-area: title;    
+      text-decoration: underline;
+      margin-bottom: 0.5%;
+    }
+    
+    #Assassination{
+      grid-area: assassination;
+    }
+    
+    #Escorting{
+      grid-area: escorting;   
+    }
+    
+    #Hunting{
+      grid-area: hunting-criminals;   
+    }
+    
+    #Dueling{
+      grid-area: dueling;    
+    }
+    
+    #Revenge{
+      grid-area: revenge;    
+    }
+    
+    #Tracking{
+      grid-area: tracking;    
+    }
+    
+    
+    div#bot
+    {
+      background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6));
+      grid-area: bot;
+      padding-top: 10%;
+      /* height: 240.64021164021165vh; */
+      height: fit-content;
+      display:grid;
+      grid-template-columns: repeat(2, minmax(auto,1fr)) ;
+      grid-template-rows: repeat(3, minmax(auto,1fr));
+     /*  padding-bottom: 1%; */
+    }
+    div.top,div.bot
+    {
+     position: static;
+      width: 80%;    
+      /* left: 10%; */
+      margin-left: 10%;
+      border: 2px rgba(0, 0, 0, 0.226) solid;
+      border-top: none;
+      /* bottom: 2.5%; */
+      border-radius: 2%;
+    }
+    
+   
+    
+    #bot p
+    {
+      position:relative;
+      border-top: 2px rgba(0, 0, 0, 0.226) solid;
+      
+      text-align: center;
+      color: black;
+    }
+    #bot h2
+    {
+      font-size: xx-large;
+      text-decoration: underline;
+    }
+    
+    .slideshow-container 
+    {
+      position: relative; /* arrows move to picture */
+      width: 100%;
+      max-width:90%; 
+      margin: auto;
+      overflow: hidden;
+      margin-bottom: 10%;
+    }
+    
+    .slides {
+      display: none;
+    }
+    
+    .slides img {
+      height: 60cqmax;
+  
+      border-radius: 2%;
+      border-top: 2px black solid;   
+      width: 100%;
+      
+    }
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 18%;
+      width: auto;
+      padding: 3%;
+      margin-top: -5%;
+      color: white;
+      font-weight: bold;
+      font-size: 180%;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      cursor: url(crosshair/focus2.png) 15 15,crosshair;
+      font-style: normal;
+    }
+    
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+   
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+  
+    #bottom{    
+      width: 100%;
+      grid-area: bottom;
+      
+    }
+    
+    #Titles{  
+      text-align: center;
+      text-decoration: underline;
+    }
+    
+    #title-box{
+  
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0.5%;
+   
+      grid-template-areas:
+      "title title title"
+      "titles1 titles2 titles3";  
+      text-align: center; 
+    }
+    
+    #titles1{
+      grid-area: titles1;      
+    }
+    
+    #titles2{
+      grid-area: titles2;   
+    }
+    
+    #titles3{
+      grid-area: titles3;   
+    }
+    
+    .title-group{
+      font-size: 190%;
+    }
+
+}
+
+@media screen and (min-width:1025px) and (max-width: 1199px) /* Small Laptop */
+{
+  /* css reset */
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
+  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* css reset end*/
+  .prev,.next
+  {
+    top: 20%;
+  }
+  section#description>p
+  { 
+    
+    position: relative;
+    top: 10%;
+    color: white;
+    text-align: center;
+    animation-name: description-text;
+    animation-duration: 2s;
+    
+    
+    
+  }
+  
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) /* Laptop */
+{ 
+  /* css reset */
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
+  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* css reset end*/
+  
+  .prev,.next
+  {
+    top: 20%;
+  }
+  section#description>p
+  { 
+    
+    position: relative;
+    top: 10%;
+    color: white;
+    text-align: center;
+    animation-name: description-text;
+    animation-duration: 2s;
+    
+    
+    
+  }
+  div#bot
+  {
+    background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6));
+    grid-area: bot;
+    padding-top: 3%;
+    height: fit-content;
+    display:grid;
+    grid-template-columns: repeat(3, minmax(auto,1fr)) ;
+    grid-template-rows: repeat(2, minmax(auto,1fr));
+    padding-bottom: 1%;
+  }
+  .footer
+    {
+    grid-area: footer;
+    background: linear-gradient(90deg,#6d6d6d,#4a4a4a) ;
+    width: 100%;
+    height: 8.349206349206349vh;
+    position: relative;
+    top: 5.291005291005291vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;  
+    }
+    
+
+
+.menu
+{
+  height: 7.291005291005291vh;
+  padding: 1%;
+  text-align: center;
+  background: radial-gradient(rgb(226, 159, 4),rgb(200, 60, 6),#82291B);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+.header-img img
+{
+    z-index: 1;
+    height: 5.291005291005291vh;
+    position: absolute;
+    left: 0.25em;
+}
+}
+
+  
+ 
+ 
+ 
+
+

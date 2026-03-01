@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../favicon_io/favicon.ico">  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input-form.css">    
+    <title>User Form</title>    
+  
+</head>
+<body>
+    <form>
+       
+       
+        <fieldset id=user-details>
+                <legend>User Details</legend>
+                <ol>
+                    <li>
+                        <label for="First Name">First Name:</label>
+                        <input type="text" name="First-Name" id="First-Name" placeholder="First Name" required>
+                    </li> <!-- End Of Telephone -->
+                    
+                    <li>
+                        <label for="Surname">Surname:</label>
+                        <input type="text" name="Surname" id="Surname" required placeholder="Surname">
+                    </li> <!-- End Of Telephone -->
+    
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    </li> <!-- End Of Telephone -->
+    
+                    <li>
+                        <label for="Telephone">Telephone:</label>
+                        <input type="text" name="Telephone" id="Telephone" placeholder="Telephone number" required>
+                    </li> <!-- End Of Telephone -->
+    
+                    <li>
+                        <label for="">
+                            Select a Job:
+                        </label>
+    
+                        <select name="" id="" required>
+                            <option value="">Select a Job</option>
+                        <optgroup>
+                            <option value="">Hunting Criminals</option>
+                        </optgroup> <!-- End Of Hunting -->
+    
+                        <optgroup>
+                            <option value="">Tracking</option>
+                        </optgroup> <!-- End Of Tracking -->
+    
+                        <optgroup>
+                            <option value="">Dueling </option>
+                        </optgroup> <!-- End Of Dueling -->
+    
+                        <optgroup>
+                            <option value="">Escorting</option>
+                        </optgroup> <!-- End Of Escorting -->
+    
+                        <optgroup>
+                            <option value="">Assassination</option>
+                        </optgroup> <!-- End Of Assassination -->
+    
+                        <optgroup>
+                            <option value="">Revenge</option>
+                        </optgroup> <!-- End Of Revenge -->
+    
+                        </select> <!-- End Of Select -->
+    
+                    </li>
+    
+                    <li>
+                        <label for="Date">Completion Date:</label>
+                        <input type="Date" name="Date" id="Date" placeholder="Date for completion" required>
+                    </li>
+    
+                    <li>
+                        <label style="width: 180px;" for="TandC">Agree to T's and C's:</label>
+                        <input type="radio" name="TandC" id="TandC" required>
+                    </li>                          
+                </ol>
+                <div id="submit-input"> <legend id="Logo">
+                    <input id="submit" type="submit">
+                </legend> </div>
+                <div class="image-1"><img src="../favicon_io/favicon.ico" alt=""></div>
+        </fieldset><!-- End Of User Details -->
+        
+        
+       
+        <fieldset id="user-review">
+            <legend id="legend-1">User Review</legend>
+            <label for="comment-section">Comment Section</label>
+
+            <textarea name="comment-section" id="comment-section" placeholder="Place Comments Here"></textarea>
+                
+            <label for="radiobox">Please Leave A Rating:</label>
+            <ol id="rating-stars">
+                <li>
+                    <input type="radio" name="radiobox" id="5-star">
+                    <label for="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</label>
+                </li>
+                <li> 
+                    <input type="radio" name="radiobox" id="4-star">
+                    <label for="⭐⭐⭐⭐">⭐⭐⭐⭐</label>
+                </li>
+                <li>       
+                    <input type="radio" name="radiobox" id="3-star">
+                    <label for="⭐⭐⭐">⭐⭐⭐</label>
+                </li>
+                <li>
+                    <input type="radio" name="radiobox" id="2-star">
+                    <label for="⭐⭐">⭐⭐</label>
+                </li>
+                <li>
+                    <input type="radio" name="radiobox" id="star-1">
+                    <label for="⭐">⭐</label>      
+                </li>  
+            </ol>
+            <div class="image-2"><img src="../favicon_io/favicon.ico" alt=""></div>
+            
+        
+        </fieldset><!-- End Of User Review -->  
+      
+            
+    </form>   <!-- End Of Form -->
+   
+   
+</body>
+</html>
