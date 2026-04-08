@@ -1,4 +1,4 @@
-#Ringo's Bounty Hunter Portfolio
+# Ringo's Bounty Hunter Portfolio
 
 Welcome to Ringo's Portfolio, a creative web project that blends storytelling, interactive design, and immersive features to showcase the life and work of Ringo, a seasoned bounty hunter.
 
