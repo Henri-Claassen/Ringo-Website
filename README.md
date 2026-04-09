@@ -2,7 +2,7 @@
 
 Welcome to Ringo's Portfolio, a creative web project that blends storytelling, interactive design, and immersive features to showcase the life and work of Ringo, a seasoned bounty hunter.
 
-🚀 Features
+## 🚀 Features
 
 Gunshot Sound Effects: Every click triggers realistic gunshot audio, adding an immersive Wild West atmosphere.
 
@@ -18,7 +18,7 @@ Slideshow Galleries: Visual showcases of Ringo’s missions and hunts with inter
 
 Custom Cursor: Crosshair-style cursor for thematic immersion.
 
-📂 Project Structure
+## 📂 Project Structure
 
 Index.html / Index.css → Homepage introducing Ringo and his services.
 
@@ -42,7 +42,7 @@ Sounds.js → Manages gunshot sound effects.
 
 styles.css → Global styles, fonts, and cursor customization.
 
-🎨 Design Highlights
+## 🎨 Design Highlights
 
 Radial and Linear Gradients: Used extensively for backgrounds to create dramatic, thematic visuals.
 
@@ -50,7 +50,7 @@ Animations: Keyframes for expanding sections, fading text, and background transi
 
 Grid Layouts: Modular and responsive grids for structured content presentation.
 
-🛠️ Setup
+## 🛠️ Setup
 
 1. Clone the repository using bash or github desktop:
      bash: git clone https://github.com/Henri-Claassen/Ringo-Website.git
